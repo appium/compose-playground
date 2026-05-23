@@ -9,7 +9,7 @@ startup = "1.2.0"
 recyclerview = "1.4.0"
 junit = "4.13.2"
 androidxJunit = "1.2.1"
-espressoCore = "3.6.1"
+espressoCore = "3.7.0"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
