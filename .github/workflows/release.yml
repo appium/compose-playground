@@ -2,7 +2,7 @@ name: Release
 
 on:
   push:
-    branches: [master]
+    branches: [main]
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
@@ -62,4 +62,4 @@ jobs:
       upload_release_artifacts: true
       upload_pr_artifacts: false
       release_tag: v${{ needs.version-and-release.outputs.new_release_version }}
-      checkout_ref: master
+      checkout_ref: main

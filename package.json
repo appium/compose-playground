@@ -1,7 +1,7 @@
 {
   "name": "compose-playground",
   "version": "1.0.0",
-  "description": "Jetpack Compose fixture app for Appium Espresso driver testing",
+  "description": "Jetpack Compose fixture app for Android UI exploration and testing",
   "license": "Apache-2.0",
   "main": "index.mjs",
   "scripts": {
@@ -20,10 +20,10 @@
     "url": "https://github.com/appium/compose-playground.git"
   },
   "keywords": [
-    "appium",
     "android",
     "jetpack-compose",
-    "espresso"
+    "ui-testing",
+    "instrumented-tests"
   ],
   "author": "Appium Contributors",
   "bugs": {

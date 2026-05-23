@@ -3,9 +3,9 @@
 [![Build](https://github.com/appium/compose-playground/actions/workflows/build.yml/badge.svg)](https://github.com/appium/compose-playground/actions/workflows/build.yml)
 [![Test](https://github.com/appium/compose-playground/actions/workflows/test-push.yml/badge.svg)](https://github.com/appium/compose-playground/actions/workflows/test-push.yml)
 
-Fixture Android app for end-to-end validation of [Appium Espresso driver](https://github.com/appium/appium-espresso-driver) Jetpack Compose support. The home screen uses classic Android views (Espresso `driver: 'espresso'`); demo screens use Compose (`driver: 'compose'`).
+A small Android fixture app for exploring and validating **Jetpack Compose** UI behavior alongside classic Android views. The home screen uses traditional `TextView` menu items; each demo screen is built with Compose.
 
-See the [Jetpack Compose support](https://github.com/appium/appium-espresso-driver#jetpack-compose-support) section in espresso-driver for usage.
+Use it for manual exploration, instrumented Compose UI tests, or as a stable APK in your own automation pipelines.
 
 ## Download
 
@@ -44,31 +44,31 @@ With an API 26+ emulator or device connected:
 
 ## Demo catalog
 
-| Menu label (classic UI) | Compose semantics | Used by espresso-driver |
-|-------------------------|-------------------|-------------------------|
-| Clickable Component | `testTag("lol")`, `contentDescription = "desc"`, text **Click to see dialog**; dialog **Congratulations! You just clicked the text successfully** | jetpack-compose-e2e-specs, jetpack-compose-attributes-e2e-specs |
-| Horizontal Carousel | Two nodes with text **Grace Hopper** | jetpack-compose-e2e-specs |
-| Display Text | Non-empty Compose tree (page source) | jetpack-compose-source-e2e-specs |
-| Text Input Components | `testTag("text_input")`, initial text **Enter your text here** | jetpack-componse-element-values-e2e-specs |
+| Menu label (classic UI) | Compose semantics | What to try |
+|-------------------------|-------------------|-------------|
+| Clickable Component | `testTag("lol")`, `contentDescription = "desc"`, text **Click to see dialog**; dialog **Congratulations! You just clicked the text successfully** | Tap by tag, content description, or text; confirm dialog |
+| Horizontal Carousel | Two nodes with text **Grace Hopper** | Find duplicate visible text in a horizontal list |
+| Display Text | Non-empty Compose tree | Inspect hierarchy / page source |
+| Text Input Components | `testTag("text_input")`, initial text **Enter your text here** | Append, replace, and clear field text |
 
-Each Compose screen sets `testTagsAsResourceId = true` on the root so Appium can resolve `testTag` / `view-tag` / `tag name` locators.
+Each Compose screen sets `testTagsAsResourceId = true` on the root so `testTag` values are exposed as view resource IDs ([Compose testing interoperability](https://developer.android.com/develop/ui/compose/testing/interoperability)).
 
 ## CI
 
 - **Build** — assembles debug and release APKs on pull requests.
-- **Test** — runs `connectedDebugAndroidTest` on an API 29 x86_64 emulator (PR via build workflow; `master` via test-push workflow).
+- **Test** — runs `connectedDebugAndroidTest` on an API 29 x86_64 emulator (PR via build workflow; `main` via test-push workflow).
 - **Lint** — ESLint on Node tooling files.
-- **Release** — semantic-release on `master` publishes `ComposePlayground-debug.apk` and `ComposePlayground-release.apk`.
+- **Release** — semantic-release on `main` publishes `ComposePlayground-debug.apk` and `ComposePlayground-release.apk`.
 
 ## Releasing
 
-Releases are automated with [semantic-release](https://github.com/semantic-release/semantic-release) on pushes to `master`. Use [Conventional Commits](https://www.conventionalcommits.org/) (e.g. `feat:`, `fix:`). Version bumps sync `package.json` and `app/build.gradle.kts` (`versionName` / `versionCode`).
+Releases are automated with [semantic-release](https://github.com/semantic-release/semantic-release) on pushes to `main`. Use [Conventional Commits](https://www.conventionalcommits.org/) (e.g. `feat:`, `fix:`). Version bumps sync `package.json` and `app/build.gradle.kts` (`versionName` / `versionCode`).
 
 ## Compatibility
 
-- **minSdk** 26 (matches espresso-driver functional test matrix minimum)
+- **minSdk** 26
 - **targetSdk** 34, **compileSdk** 35
-- Compose BOM is pinned in `gradle/libs.versions.toml`; coordinate major Compose bumps with [appium-espresso-driver](https://github.com/appium/appium-espresso-driver) `espresso-server` dependencies.
+- Compose BOM is pinned in `gradle/libs.versions.toml`; bump it when you need newer Compose APIs.
 
 ## License
 

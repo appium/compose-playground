@@ -1,5 +1,6 @@
 package io.appium.composeplayground
 
+import androidx.compose.ui.test.assert
 import androidx.compose.ui.test.assertCountEquals
 import androidx.compose.ui.test.assertIsDisplayed
 import androidx.compose.ui.test.hasText
@@ -57,16 +58,16 @@ class ComposePlaygroundTest {
 
         val field = composeRule.onNodeWithTag("text_input")
         field.assertIsDisplayed()
-        composeRule.onNode(hasText(TEXT_INPUT_INITIAL)).assertIsDisplayed()
+        field.assert(hasText(TEXT_INPUT_INITIAL))
 
         field.performTextInput("hello")
-        composeRule.onNode(hasText("${TEXT_INPUT_INITIAL}hello")).assertIsDisplayed()
+        field.assert(hasText("${TEXT_INPUT_INITIAL}hello"))
 
         field.performTextReplacement("テスト")
-        composeRule.onNode(hasText("テスト")).assertIsDisplayed()
+        field.assert(hasText("テスト"))
 
         field.performTextClearance()
-        composeRule.onNode(hasText(TEXT_INPUT_INITIAL)).assertDoesNotExist()
+        field.assert(hasText(""))
     }
 
     private fun openMenuItem(label: String) {
