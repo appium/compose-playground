@@ -2,6 +2,11 @@
 
 All notable changes to this project will be documented in this file.
 
+## <small>1.1.2 (2026-05-23)</small>
+
+* chore(deps): Bump androidx.compose:compose-bom (#6) ([f9880eb](https://github.com/appium/compose-playground/commit/f9880eb)), closes [#6](https://github.com/appium/compose-playground/issues/6)
+* chore(deps): Bump androidx.test.ext:junit from 1.2.1 to 1.3.0 (#2) ([8933254](https://github.com/appium/compose-playground/commit/8933254)), closes [#2](https://github.com/appium/compose-playground/issues/2)
+
 ## <small>1.1.1 (2026-05-23)</small>
 
 * chore(deps): Bump androidx.test.espresso:espresso-core (#8) ([578ddfb](https://github.com/appium/compose-playground/commit/578ddfb)), closes [#8](https://github.com/appium/compose-playground/issues/8)
