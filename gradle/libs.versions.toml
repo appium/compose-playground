@@ -1,7 +1,7 @@
 [versions]
 agp = "9.2.1"
 kotlin = "2.3.21" # used by kotlin-compose plugin
-coreKtx = "1.15.0"
+coreKtx = "1.18.0"
 activity = "1.9.3"
 composeBom = "2026.05.00"
 lifecycle = "2.10.0"
