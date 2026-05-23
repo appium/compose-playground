@@ -4,8 +4,7 @@ import android.os.Bundle
 import android.view.View
 import android.widget.TextView
 import androidx.activity.OnBackPressedCallback
-import androidx.activity.compose.setContent
-import androidx.appcompat.app.AppCompatActivity
+import androidx.activity.ComponentActivity
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
@@ -28,7 +27,7 @@ import io.appium.composeplayground.compose.DisplayTextDemo
 import io.appium.composeplayground.compose.TextInputDemo
 import io.appium.composeplayground.navigation.Routes
 
-class MainActivity : AppCompatActivity() {
+class MainActivity : ComponentActivity() {
 
     private lateinit var menuScroll: NestedScrollView
     private lateinit var menuList: RecyclerView

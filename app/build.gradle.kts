@@ -11,7 +11,7 @@ android {
         applicationId = "io.appium.composeplayground"
         minSdk = 26
         targetSdk = 34
-        versionCode = 1
+        versionCode = 7
         versionName = "1.0.0"
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
@@ -38,8 +38,8 @@ android {
 
 dependencies {
     implementation(libs.androidx.core.ktx)
-    implementation(libs.androidx.appcompat)
-    implementation(libs.androidx.activity.compose)
+    implementation(libs.androidx.startup.runtime)
+    implementation(libs.androidx.activity.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
     implementation(libs.androidx.recyclerview)
 

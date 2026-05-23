@@ -29,14 +29,19 @@ fun ClickableDemo(modifier: Modifier = Modifier) {
             .composeTestInterop()
             .padding(16.dp),
     ) {
-        Text(
-            text = "Click to see dialog",
-            style = MaterialTheme.typography.bodyLarge,
+        // testTag and contentDescription on parent/child so compose xpath
+        // //*[@view-tag='lol']//*[@content-desc='desc'] matches the semantics tree.
+        Box(
             modifier = Modifier
                 .testTag("lol")
-                .semantics { contentDescription = "desc" }
                 .clickable { showDialog = true },
-        )
+        ) {
+            Text(
+                text = "Click to see dialog",
+                style = MaterialTheme.typography.bodyLarge,
+                modifier = Modifier.semantics { contentDescription = "desc" },
+            )
+        }
     }
 
     if (showDialog) {

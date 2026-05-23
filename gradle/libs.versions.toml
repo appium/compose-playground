@@ -2,21 +2,20 @@
 agp = "9.2.1"
 kotlin = "2.3.0" # used by kotlin-compose plugin
 coreKtx = "1.15.0"
-appcompat = "1.7.0"
-activityCompose = "1.10.1"
-composeBom = "2025.02.00"
+activity = "1.9.3"
+composeBom = "2026.05.00"
 lifecycle = "2.8.7"
+startup = "1.2.0"
 recyclerview = "1.4.0"
 junit = "4.13.2"
 androidxJunit = "1.2.1"
 espressoCore = "3.6.1"
-composeUiTest = "1.7.8"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
-androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
-androidx-activity-compose = { group = "androidx.activity", name = "activity-compose", version.ref = "activityCompose" }
+androidx-activity-ktx = { group = "androidx.activity", name = "activity-ktx", version.ref = "activity" }
 androidx-lifecycle-runtime-ktx = { group = "androidx.lifecycle", name = "lifecycle-runtime-ktx", version.ref = "lifecycle" }
+androidx-startup-runtime = { group = "androidx.startup", name = "startup-runtime", version.ref = "startup" }
 androidx-recyclerview = { group = "androidx.recyclerview", name = "recyclerview", version.ref = "recyclerview" }
 androidx-compose-bom = { group = "androidx.compose", name = "compose-bom", version.ref = "composeBom" }
 androidx-compose-ui = { group = "androidx.compose.ui", name = "ui" }
