@@ -2,6 +2,10 @@
 
 All notable changes to this project will be documented in this file.
 
+## <small>1.1.1 (2026-05-23)</small>
+
+* chore(deps): Bump androidx.test.espresso:espresso-core (#8) ([578ddfb](https://github.com/appium/compose-playground/commit/578ddfb)), closes [#8](https://github.com/appium/compose-playground/issues/8)
+
 ## 1.1.0 (2026-05-23)
 
 * feat: Ensure ESM package (#11) ([7024c0d](https://github.com/appium/compose-playground/commit/7024c0d)), closes [#11](https://github.com/appium/compose-playground/issues/11)
