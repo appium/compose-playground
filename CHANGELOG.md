@@ -2,6 +2,11 @@
 
 All notable changes to this project will be documented in this file.
 
+## <small>1.0.2 (2026-05-23)</small>
+
+* chore(deps): Bump androidx.lifecycle:lifecycle-runtime-ktx (#7) ([11e2645](https://github.com/appium/compose-playground/commit/11e2645)), closes [#7](https://github.com/appium/compose-playground/issues/7)
+* chore(deps): Bump org.jetbrains.kotlin.plugin.compose (#5) ([13f0313](https://github.com/appium/compose-playground/commit/13f0313)), closes [#5](https://github.com/appium/compose-playground/issues/5)
+
 ## <small>1.0.1 (2026-05-23)</small>
 
 * chore(deps): Bump gradle-wrapper from 9.5.0 to 9.5.1 (#3) ([9aa600f](https://github.com/appium/compose-playground/commit/9aa600f)), closes [#3](https://github.com/appium/compose-playground/issues/3)
