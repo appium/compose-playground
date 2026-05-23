@@ -28,6 +28,8 @@ replay_pid*
 .kotlin/
 
 # Android / Gradle
+!gradlew
+!gradlew.bat
 .gradle/
 build/
 app/build/
