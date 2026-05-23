@@ -3,7 +3,15 @@
   "version": "1.0.1",
   "description": "Jetpack Compose fixture app for Android UI exploration and testing",
   "license": "Apache-2.0",
-  "main": "index.mjs",
+  "type": "module",
+  "main": "./index.mjs",
+  "types": "./index.d.mts",
+  "exports": {
+    ".": {
+      "types": "./index.d.mts",
+      "default": "./index.mjs"
+    }
+  },
   "scripts": {
     "bump-gradle-version": "node ./scripts/gradle-version-update.mjs --package-version=${npm_package_version} && git add app/build.gradle.kts",
     "build": "npm run build:debug",
@@ -36,6 +44,7 @@
   },
   "files": [
     "./index.mjs",
+    "./index.d.mts",
     "LICENSE",
     "CHANGELOG.md"
   ],
