@@ -1,0 +1,20 @@
+name: Build
+
+on:
+  pull_request:
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    name: Build App
+    uses: ./.github/workflows/build-app.yml
+    with:
+      upload_release_artifacts: false
+      upload_pr_artifacts: true
+
+  test:
+    name: Instrumented Tests
+    uses: ./.github/workflows/test.yml
