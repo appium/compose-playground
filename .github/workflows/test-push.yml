@@ -1,0 +1,14 @@
+name: Test
+
+on:
+  push:
+    branches: [main]
+
+concurrency:
+  group: test-push-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  instrumented:
+    name: Connected Android Tests
+    uses: ./.github/workflows/test.yml
