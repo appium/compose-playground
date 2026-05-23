@@ -1,7 +1,6 @@
 # compose-playground
 
 [![Build](https://github.com/appium/compose-playground/actions/workflows/build.yml/badge.svg)](https://github.com/appium/compose-playground/actions/workflows/build.yml)
-[![Test](https://github.com/appium/compose-playground/actions/workflows/test-push.yml/badge.svg)](https://github.com/appium/compose-playground/actions/workflows/test-push.yml)
 
 A small Android fixture app for exploring and validating **Jetpack Compose** UI behavior alongside classic Android views. The home screen uses traditional `TextView` menu items; each demo screen is built with Compose.
 
@@ -56,7 +55,7 @@ Each Compose screen sets `testTagsAsResourceId = true` on the root so `testTag` 
 ## CI
 
 - **Build** — assembles debug and release APKs on pull requests.
-- **Test** — runs `connectedDebugAndroidTest` on an API 29 x86_64 emulator (PR via build workflow; `main` via test-push workflow).
+- **Test** — runs `connectedDebugAndroidTest` on an emulator on pull requests only.
 - **Lint** — ESLint on Node tooling files.
 - **Release** — semantic-release on `main` publishes `ComposePlayground-debug.apk` and `ComposePlayground-release.apk`.
 
