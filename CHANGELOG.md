@@ -2,6 +2,10 @@
 
 All notable changes to this project will be documented in this file.
 
+## 1.1.0 (2026-05-23)
+
+* feat: Ensure ESM package (#11) ([7024c0d](https://github.com/appium/compose-playground/commit/7024c0d)), closes [#11](https://github.com/appium/compose-playground/issues/11)
+
 ## <small>1.0.2 (2026-05-23)</small>
 
 * chore(deps): Bump androidx.lifecycle:lifecycle-runtime-ktx (#7) ([11e2645](https://github.com/appium/compose-playground/commit/11e2645)), closes [#7](https://github.com/appium/compose-playground/issues/7)
