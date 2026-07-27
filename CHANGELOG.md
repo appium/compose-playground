@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.1.4](https://github.com/appium/compose-playground/compare/v1.1.3...v1.1.4) (2026-07-27)
+
+### Miscellaneous Chores
+
+* Update various Android dependencies ([#32](https://github.com/appium/compose-playground/issues/32)) ([073d52c](https://github.com/appium/compose-playground/commit/073d52c6580df1bb621c6bbb0ffc0c038dc4c3af))
+
 ## [1.1.3](https://github.com/appium/compose-playground/compare/v1.1.2...v1.1.3) (2026-07-27)
 
 ### Miscellaneous Chores
