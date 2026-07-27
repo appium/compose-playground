@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.1.3](https://github.com/appium/compose-playground/compare/v1.1.2...v1.1.3) (2026-07-27)
+
+### Miscellaneous Chores
+
+* Integrate oxc and release configs ([#31](https://github.com/appium/compose-playground/issues/31)) ([3f4ba17](https://github.com/appium/compose-playground/commit/3f4ba17bb490a203dd4f01f40b5f45ece3fc655f))
+
 ## <small>1.1.2 (2026-05-23)</small>
 
 * chore(deps): Bump androidx.compose:compose-bom (#6) ([f9880eb](https://github.com/appium/compose-playground/commit/f9880eb)), closes [#6](https://github.com/appium/compose-playground/issues/6)
