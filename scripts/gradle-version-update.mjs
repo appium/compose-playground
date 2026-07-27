@@ -1,6 +1,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
-import { fileURLToPath } from 'node:url';
+import {fileURLToPath} from 'node:url';
+
 import semver from 'semver';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
@@ -32,9 +33,7 @@ async function gradleVersionUpdate() {
     throw new Error('No package version argument (use `--package-version=xxx`)');
   }
   if (!semver.valid(version)) {
-    throw new Error(
-      `Invalid version specified '${version}'. Version should be in the form '1.2.3'`,
-    );
+    throw new Error(`Invalid version specified '${version}'. Version should be in the form '1.2.3'`);
   }
 
   const gradleFilePayload = await fs.promises.readFile(gradleFile, 'utf8');
@@ -49,9 +48,7 @@ async function gradleVersionUpdate() {
   }
   const newCode = parseInt(versionCodeMatch[1], 10) + 1;
   // eslint-disable-next-line no-console
-  console.log(
-    `Updating gradle build file '${gradleFile}' to version name '${version}' and version code '${newCode}'`,
-  );
+  console.log(`Updating gradle build file '${gradleFile}' to version name '${version}' and version code '${newCode}'`);
   const newVersionCode = versionCodeMatch[0].replace(/\d+/, `${newCode}`);
   const newPayload = gradleFilePayload
     .replace(versionNameMatch[0], newVersionName)

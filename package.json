@@ -2,7 +2,28 @@
   "name": "compose-playground",
   "version": "1.1.2",
   "description": "Jetpack Compose fixture app for Android UI exploration and testing",
+  "keywords": [
+    "android",
+    "instrumented-tests",
+    "jetpack-compose",
+    "ui-testing"
+  ],
+  "homepage": "https://github.com/appium/compose-playground",
+  "bugs": {
+    "url": "https://github.com/appium/compose-playground/issues"
+  },
   "license": "Apache-2.0",
+  "author": "Appium Contributors",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/appium/compose-playground.git"
+  },
+  "files": [
+    "./index.mjs",
+    "./index.d.mts",
+    "LICENSE",
+    "CHANGELOG.md"
+  ],
   "type": "module",
   "main": "./index.mjs",
   "types": "./index.d.mts",
@@ -18,42 +39,20 @@
     "build:debug": "./gradlew assembleDebug",
     "build:release": "./gradlew assembleRelease",
     "build:clean": "./gradlew clean",
-    "lint": "eslint .",
-    "lint:fix": "npm run lint -- --fix",
+    "lint": "oxlint -c oxlint.config.mjs .",
+    "lint:fix": "oxlint -c oxlint.config.mjs --fix .",
+    "format": "oxfmt -c oxfmt.config.mjs .",
+    "format:check": "oxfmt -c oxfmt.config.mjs --check .",
     "version": "npm run bump-gradle-version",
     "clean": "rm -rf node_modules && rm -f package-lock.json && npm install"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/appium/compose-playground.git"
+  "devDependencies": {
+    "@appium/oxc-config": "^1.1.0",
+    "@appium/semantic-release-config": "^1.1.0",
+    "semver": "^7.3.7"
   },
-  "keywords": [
-    "android",
-    "jetpack-compose",
-    "ui-testing",
-    "instrumented-tests"
-  ],
-  "author": "Appium Contributors",
-  "bugs": {
-    "url": "https://github.com/appium/compose-playground/issues"
-  },
-  "homepage": "https://github.com/appium/compose-playground",
   "engines": {
     "node": "^20.19.0 || ^22.12.0 || >=24.0.0",
     "npm": ">=10"
-  },
-  "files": [
-    "./index.mjs",
-    "./index.d.mts",
-    "LICENSE",
-    "CHANGELOG.md"
-  ],
-  "devDependencies": {
-    "@appium/eslint-config-appium-ts": "^3.0.0",
-    "@semantic-release/changelog": "^6.0.3",
-    "@semantic-release/git": "^10.0.1",
-    "conventional-changelog-conventionalcommits": "^9.1.0",
-    "semantic-release": "^25.0.0",
-    "semver": "^7.3.7"
   }
 }

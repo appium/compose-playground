@@ -20,7 +20,7 @@ https://github.com/appium/compose-playground/releases/download/vX.Y.Z/ComposePla
 
 - JDK 17
 - Android SDK Platform 35 (compile SDK)
-- Node.js 20+ and npm 10+ (release tooling and ESLint)
+- Node.js 20+ and npm 10+ (release tooling and linting)
 
 ## Build locally
 
@@ -56,7 +56,7 @@ Each Compose screen sets `testTagsAsResourceId = true` on the root so `testTag` 
 
 - **Build** — assembles debug and release APKs on pull requests.
 - **Test** — runs `connectedDebugAndroidTest` on an emulator on pull requests only.
-- **Lint** — ESLint on Node tooling files.
+- **Lint** — oxlint and oxfmt on Node tooling files.
 - **Release** — semantic-release on `main` publishes `ComposePlayground-debug.apk` and `ComposePlayground-release.apk`.
 
 ## Releasing
