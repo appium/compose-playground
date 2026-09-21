@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.1.6](https://github.com/appium/compose-playground/compare/v1.1.5...v1.1.6) (2026-09-21)
+
+### Miscellaneous Chores
+
+* **deps:** Bump com.android.application from 9.3.1 to 9.4.1 ([#41](https://github.com/appium/compose-playground/issues/41)) ([0c4327f](https://github.com/appium/compose-playground/commit/0c4327f260cc8f25b0d85af7ad4451beb0d8c84e))
+* **deps:** Bump gradle-wrapper from 9.7.0 to 9.7.1 ([#36](https://github.com/appium/compose-playground/issues/36)) ([8161822](https://github.com/appium/compose-playground/commit/816182294a9f52e4d11bc8bfe39e828be87b9d5c))
+
 ## [1.1.5](https://github.com/appium/compose-playground/compare/v1.1.4...v1.1.5) (2026-08-10)
 
 ### Miscellaneous Chores
