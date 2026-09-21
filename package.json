@@ -1,6 +1,6 @@
 {
   "name": "compose-playground",
-  "version": "1.1.6",
+  "version": "1.1.7",
   "description": "Jetpack Compose fixture app for Android UI exploration and testing",
   "keywords": [
     "android",

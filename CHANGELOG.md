@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.1.7](https://github.com/appium/compose-playground/compare/v1.1.6...v1.1.7) (2026-09-21)
+
+### Miscellaneous Chores
+
+* **deps:** Bump androidx.compose:compose-bom ([#40](https://github.com/appium/compose-playground/issues/40)) ([0d72eea](https://github.com/appium/compose-playground/commit/0d72eeac26e384858829244e590de8a0464969be))
+
 ## [1.1.6](https://github.com/appium/compose-playground/compare/v1.1.5...v1.1.6) (2026-09-21)
 
 ### Miscellaneous Chores
