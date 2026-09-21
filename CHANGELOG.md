@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.1.8](https://github.com/appium/compose-playground/compare/v1.1.7...v1.1.8) (2026-09-21)
+
+### Miscellaneous Chores
+
+* **deps:** Bump org.jetbrains.kotlin.plugin.compose ([#39](https://github.com/appium/compose-playground/issues/39)) ([f29bf01](https://github.com/appium/compose-playground/commit/f29bf01af695b59b76a2e63e64b83ec402f4d061))
+
 ## [1.1.7](https://github.com/appium/compose-playground/compare/v1.1.6...v1.1.7) (2026-09-21)
 
 ### Miscellaneous Chores
