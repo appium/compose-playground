@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.1.9](https://github.com/appium/compose-playground/compare/v1.1.8...v1.1.9) (2026-09-28)
+
+### Miscellaneous Chores
+
+* **deps:** Bump androidx.core:core-ktx from 1.19.0 to 1.19.1 ([#43](https://github.com/appium/compose-playground/issues/43)) ([809bac4](https://github.com/appium/compose-playground/commit/809bac4ddd0f2319c59a631956e7661c6b29fb9d))
+* **deps:** Bump gradle-wrapper from 9.7.1 to 9.8.0 ([#42](https://github.com/appium/compose-playground/issues/42)) ([487a4ca](https://github.com/appium/compose-playground/commit/487a4ca070830312cc5abf64f19e7545c95f9ae2))
+
 ## [1.1.8](https://github.com/appium/compose-playground/compare/v1.1.7...v1.1.8) (2026-09-21)
 
 ### Miscellaneous Chores
