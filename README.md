@@ -2,6 +2,9 @@
 
 [![Build](https://github.com/appium/compose-playground/actions/workflows/build.yml/badge.svg)](https://github.com/appium/compose-playground/actions/workflows/build.yml)
 
+> **This repository has moved.** Development now continues in the [appium-android monorepo](https://github.com/appium/appium-android/tree/main/packages/compose-playground).
+
+
 A small Android fixture app for exploring and validating **Jetpack Compose** UI behavior alongside classic Android views. The home screen uses traditional `TextView` menu items; each demo screen is built with Compose.
 
 Use it for manual exploration, instrumented Compose UI tests, or as a stable APK in your own automation pipelines.
